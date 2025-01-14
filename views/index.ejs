@@ -11,10 +11,22 @@
     <a href="/about">Learn more about us</a>
     <p>age = <%= age %>!</p>
     <p><%= termilog %></p>
+
+    <h1>Common Items List</h1>
     <ul>
       <% items.forEach(item => { %>
           <li><%= item %></li>
       <% }) %>
-  </ul>
+    </ul>
+
+    <h1>Database Items List</h1>
+    <ul>
+        <% items2.forEach(item2 => { %>
+            <li>
+                <strong><%= item2.title %></strong>: <%= item2.createdAt %>
+            </li>
+        <% }) %>
+    </ul>
+
 </body>
 </html>
