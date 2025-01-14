@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= title %></title>
+</head>
+<body>
+    <h1>Hello!</h1>
+    <p>Welcome to the EJS tutorial.</p>
+    <a href="/about">Learn more about us</a>
+    <p>age = <%= age %>!</p>
+    <p><%= termilog %></p>
+    <ul>
+      <% items.forEach(item => { %>
+          <li><%= item %></li>
+      <% }) %>
+  </ul>
+</body>
+</html>
